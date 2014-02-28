@@ -1,0 +1,32 @@
+{
+  "name": "react-with-di",
+  "version": "0.0.0",
+  "description": "A hacked prototype of React.js with DI.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "di": "~2.0.0-pre-2",
+    "requirejs": "~2.1.11"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-traceur": "~0.1.3",
+    "gulp-connect": "~1.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vojtajina/react-with-di.git"
+  },
+  "keywords": [
+    "react",
+    "di"
+  ],
+  "author": "Vojta Jina <vojta.jina@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vojtajina/react-with-di/issues"
+  },
+  "homepage": "https://github.com/vojtajina/react-with-di"
+}

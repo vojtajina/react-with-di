@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>React.js with DI.js</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script src="./react.js"></script>
+
+    <!-- So that we can use ES6 -->
+    <script src="./node_modules/di/node_modules/traceur/bin/traceur-runtime.js"></script>
+    <script src="./node_modules/di/node_modules/es6-shim/es6-shim.js"></script>
+
+    <!-- To load all the files, we transpile ES6 modules into RequireJS -->
+    <script src="./node_modules/requirejs/require.js"></script>
+
+    <!-- Bootstrap the app -->
+    <script>
+
+    require.config({
+      baseUrl: './transpiled',
+      paths: {
+        di: '/node_modules/di/dist/amd/'
+      },
+      deps: ['./react_di_hack'],
+      callback: function() {
+        require(['./counter_component'], function(cc) {
+          React.renderComponent(
+            cc.CounterComponent({}),
+            document.getElementById('container')
+          );
+        });
+      }
+    });
+
+    </script>
+  </body>
+</html>

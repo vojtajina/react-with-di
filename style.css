@@ -1,0 +1,33 @@
+.counter {
+  width: 120px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.counter.positive {
+  background-color: rgb(207, 255, 207);
+}
+
+.counter.negative {
+  background-color: rgb(255, 207, 207);
+}
+
+.counter div {
+  flex: 1;
+  -webkit-flex: 1;
+  border-top: 1px solid rgb(150, 150, 150);
+  border-bottom: 1px solid rgb(150, 150, 150);
+  margin: 0;
+  height: 20px;
+  padding: 4px 7px;
+  font-family: monospace;
+  font-size: 16px;
+  text-align: right;
+}
+
+.counter button {
+  height: 30px;
+  margin: 0;
+  width: 30px;
+  cursor: pointer;
+}
