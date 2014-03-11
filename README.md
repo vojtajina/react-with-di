@@ -38,7 +38,7 @@ Anyway, that's why I [hacked] this prototype of [React] with [di.js]. Now, each 
 
 I tried to explain why I think Dependency Injection makes sense in JavaScript in my [ng-conf talk] (in the first part, the rest is about Angular and di.js).
 
-React is a view layer, not full-blown framework. There is no routing, storage, forms, blahblabla... but I don't think that's bad. It just means you can use other tools with React. For instance, one could use Bacbone model with it pretty easily. Or maybe once we modularize Angular better (it's coming in v2), one could any of the Angular services and React as the view layer, if you like. Anyway, the point is that wiring it up with DI would make this much simpler...
+React is a view layer, not full-blown framework. There is no routing, storage, forms, blahblabla... but I don't think that's bad. It just means you can use other tools with React. For instance, one could use Backbone model with it pretty easily. Or maybe once we modularize Angular better (it's coming in v2), one could any of the Angular services and React as the view layer, if you like. Anyway, the point is that wiring it up with DI would make this much simpler...
 
 Some more ideas to do:
 - allow passing additional providers to override default bindings,
